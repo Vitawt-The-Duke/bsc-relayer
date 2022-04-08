@@ -1,7 +1,7 @@
-FROM golang:1.13-alpine
+FROM golang:1.18-alpine
 
 # Set up apk dependencies
-ENV PACKAGES make git libc-dev bash gcc linux-headers eudev-dev curl ca-certificates
+ENV PACKAGES make git libc-dev bash gcc linux-headers eudev-dev curl ca-certificates mc jq
 
 ENV BSC_RELAYER_HOME /opt/app
 
